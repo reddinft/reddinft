@@ -2,18 +2,19 @@ name: Update blog posts in README
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Daily at 2am UTC (noon AEST)
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
   update-blog:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
       - name: Fetch latest posts from reddi.tech
-        run: |
-          curl -s https://www.reddi.tech/feed.xml > feed.xml
+        run: curl -s https://www.reddi.tech/feed.xml > feed.xml
 
       - name: Parse and inject blog posts
         run: |
@@ -23,34 +24,27 @@ jobs:
 
           tree = ET.parse('feed.xml')
           root = tree.getroot()
-          ns = {'atom': 'http://www.w3.org/2005/Atom'}
-
           items = root.findall('.//item')[:5]
           lines = []
           for item in items:
               title = item.find('title').text.strip()
-              link = item.find('link').text.strip()
-              # Fix reddi.ai → reddi.tech in links
-              link = link.replace('https://reddi.ai', 'https://reddi.tech')
+              link = item.find('link').text.strip().replace('https://reddi.ai', 'https://reddi.tech')
               pub = item.find('pubDate').text.strip()[:16]
               lines.append(f'- [{title}]({link}) — {pub}')
 
-          block = '\n'.join(lines)
-
+          block = '
+'.join(lines)
           with open('README.md', 'r') as f:
               content = f.read()
 
-          replacement = f'<!-- BLOG_POSTS_START -->\n<!-- Auto-updated daily via GitHub Actions — source: reddi.tech/feed.xml -->\n{block}\n<!-- BLOG_POSTS_END -->'
-          content = re.sub(
-              r'<!-- BLOG_POSTS_START -->.*?<!-- BLOG_POSTS_END -->',
-              replacement,
-              content,
-              flags=re.DOTALL
-          )
+          replacement = f'<!-- BLOG_POSTS_START -->
+<!-- Auto-updated daily via GitHub Actions — source: reddi.tech/feed.xml -->
+{block}
+<!-- BLOG_POSTS_END -->'
+          content = re.sub(r'<!-- BLOG_POSTS_START -->.*?<!-- BLOG_POSTS_END -->', replacement, content, flags=re.DOTALL)
 
           with open('README.md', 'w') as f:
               f.write(content)
-
           print(f"Injected {len(items)} posts")
           PYEOF
 
