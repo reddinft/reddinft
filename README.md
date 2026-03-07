@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nissan/nissan/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nissan/nissan/output/github-contribution-grid-snake.svg">
-  <img alt="contribution grid snake" src="https://raw.githubusercontent.com/nissan/nissan/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reddinft/reddinft/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/reddinft/reddinft/output/github-contribution-grid-snake.svg">
+  <img alt="contribution grid snake" src="https://raw.githubusercontent.com/reddinft/reddinft/output/github-contribution-grid-snake.svg">
 </picture>
 
 # Redditech Labs — Engineering Account
