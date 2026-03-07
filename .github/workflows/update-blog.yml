@@ -13,44 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch and inject latest blog posts
+      - name: Fetch and update blog posts
         run: |
           curl -s https://www.reddi.tech/feed.xml > feed.xml
-          python3 - << 'PYEOF'
-import xml.etree.ElementTree as ET
-import re
-
-tree = ET.parse('feed.xml')
-items = tree.getroot().findall('.//item')[:5]
-
-lines = []
-for item in items:
-    title = item.find('title').text.strip()
-    link = item.find('link').text.strip().replace('https://reddi.ai', 'https://reddi.tech')
-    pub = item.find('pubDate').text.strip()[:16]
-    lines.append('- [{}]({}) -- {}'.format(title, link, pub))
-
-block = '\n'.join(lines)
-marker_start = '<!-- BLOG_POSTS_START -->'
-marker_end = '<!-- BLOG_POSTS_END -->'
-note = '<!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->'
-
-with open('README.md', 'r') as f:
-    content = f.read()
-
-replacement = '{}\n{}\n{}\n{}'.format(marker_start, note, block, marker_end)
-content = re.sub(
-    r'<!-- BLOG_POSTS_START -->.*?<!-- BLOG_POSTS_END -->',
-    replacement,
-    content,
-    flags=re.DOTALL
-)
-
-with open('README.md', 'w') as f:
-    f.write(content)
-
-print('Injected {} posts'.format(len(lines)))
-PYEOF
+          python3 parse_blog.py
 
       - name: Commit if changed
         run: |
@@ -61,3 +27,4 @@ PYEOF
             git commit -m "chore: update latest blog posts from reddi.tech" &&
             git push
           )
+
