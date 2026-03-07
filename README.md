@@ -64,7 +64,12 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 ## Latest from the lab
 
 <!-- BLOG_POSTS_START -->
-<!-- Auto-updated daily via GitHub Actions — source: reddi.tech/feed.xml -->
+<!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [I Had an AI Agent Build, Deploy, and Instrument a Course Platform While I Watched](https://reddi.tech/blog/ai-agent-deployed-openclaw-academy) -- Fri, 06 Mar 2026
+- [I built redundancy. It failed redundantly.](https://reddi.tech/blog/blog-cascade-failure) -- Fri, 27 Feb 2026
+- [What running local AI on a Mac Mini actually taught me: 7 things the tutorials, YouTube and ChatGPT all skipped](https://reddi.tech/blog/blog-macos-daemon-gotchas) -- Thu, 26 Feb 2026
+- [My eval was silently giving every analysis task a failing score for weeks (and why)](https://reddi.tech/blog/blog-silent-eval-bug) -- Wed, 25 Feb 2026
+- [The model I designed as my floor outperformed every candidate](https://reddi.tech/blog/blog-floor-model-surprise) -- Tue, 24 Feb 2026
 <!-- BLOG_POSTS_END -->
 
 ---
