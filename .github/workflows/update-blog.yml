@@ -13,40 +13,44 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch latest posts from reddi.tech
-        run: curl -s https://www.reddi.tech/feed.xml > feed.xml
-
-      - name: Parse and inject blog posts
+      - name: Fetch and inject latest blog posts
         run: |
-          python3 << 'PYEOF'
-          import xml.etree.ElementTree as ET
-          import re
+          curl -s https://www.reddi.tech/feed.xml > feed.xml
+          python3 - << 'PYEOF'
+import xml.etree.ElementTree as ET
+import re
 
-          tree = ET.parse('feed.xml')
-          root = tree.getroot()
-          items = root.findall('.//item')[:5]
-          lines = []
-          for item in items:
-              title = item.find('title').text.strip()
-              link = item.find('link').text.strip().replace('https://reddi.ai', 'https://reddi.tech')
-              pub = item.find('pubDate').text.strip()[:16]
-              lines.append(f'- [{title}]({link}) — {pub}')
+tree = ET.parse('feed.xml')
+items = tree.getroot().findall('.//item')[:5]
 
-          block = '
-'.join(lines)
-          with open('README.md', 'r') as f:
-              content = f.read()
+lines = []
+for item in items:
+    title = item.find('title').text.strip()
+    link = item.find('link').text.strip().replace('https://reddi.ai', 'https://reddi.tech')
+    pub = item.find('pubDate').text.strip()[:16]
+    lines.append('- [{}]({}) -- {}'.format(title, link, pub))
 
-          replacement = f'<!-- BLOG_POSTS_START -->
-<!-- Auto-updated daily via GitHub Actions — source: reddi.tech/feed.xml -->
-{block}
-<!-- BLOG_POSTS_END -->'
-          content = re.sub(r'<!-- BLOG_POSTS_START -->.*?<!-- BLOG_POSTS_END -->', replacement, content, flags=re.DOTALL)
+block = '\n'.join(lines)
+marker_start = '<!-- BLOG_POSTS_START -->'
+marker_end = '<!-- BLOG_POSTS_END -->'
+note = '<!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->'
 
-          with open('README.md', 'w') as f:
-              f.write(content)
-          print(f"Injected {len(items)} posts")
-          PYEOF
+with open('README.md', 'r') as f:
+    content = f.read()
+
+replacement = '{}\n{}\n{}\n{}'.format(marker_start, note, block, marker_end)
+content = re.sub(
+    r'<!-- BLOG_POSTS_START -->.*?<!-- BLOG_POSTS_END -->',
+    replacement,
+    content,
+    flags=re.DOTALL
+)
+
+with open('README.md', 'w') as f:
+    f.write(content)
+
+print('Injected {} posts'.format(len(lines)))
+PYEOF
 
       - name: Commit if changed
         run: |
