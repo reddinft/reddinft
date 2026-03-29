@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [My OpenClaw Chronicles — What running local AI on a Mac Mini actually taught me](https://reddi.tech/blog/my-openclaw-chronicles-mac-mini) -- Sun, 29 Mar 2026
 - [My OpenClaw Chronicles — How I built a statistical proof that local AI can replace Claude](https://reddi.tech/blog/my-openclaw-chronicles-statistical-proof) -- Sat, 28 Mar 2026
 - [How We Structured an AI Agent Team: Lessons from a Constitutional Standard Rollout](https://reddi.tech/blog/blog-agent-constitution) -- Fri, 20 Mar 2026
 - [I Built a Viral App in an Afternoon. Here's the Team That Did It.](https://reddi.tech/blog/blog-barry-starr-openclaw) -- Tue, 17 Mar 2026
 - [Model Size ≠ Model Fit: How Haiku Beat Mistral Large With a Real Deadline on the Line](https://reddi.tech/blog/model-task-fit-haiku-vs-mistral) -- Sat, 14 Mar 2026
-- [I Had an AI Agent Build, Deploy, and Instrument a Course Platform While I Watched](https://reddi.tech/blog/ai-agent-deployed-openclaw-academy) -- Fri, 06 Mar 2026
 <!-- BLOG_POSTS_END -->
 
 ---
