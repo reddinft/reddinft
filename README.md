@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [We Studied Portkey's Gateway for a Day. Then We Built Our Own Version and Shipped It.](https://reddi.tech/blog/portkey-patterns-specification-not-dependency) -- Fri, 03 Apr 2026
+- [Replacing OpenAI Embeddings with Ollama — $0 vs $5/hour](https://reddi.tech/blog/replacing-openai-embeddings-with-ollama) -- Fri, 03 Apr 2026
 - [The detective and the surgeon: what 395 experiments taught us about routing AI agents](https://reddi.tech/blog/detective-and-surgeon-ralph-lab-routing) -- Tue, 31 Mar 2026
 - [My OpenClaw Chronicles — What running local AI on a Mac Mini actually taught me](https://reddi.tech/blog/my-openclaw-chronicles-mac-mini) -- Sun, 29 Mar 2026
 - [My OpenClaw Chronicles — How I built a statistical proof that local AI can replace Claude](https://reddi.tech/blog/my-openclaw-chronicles-statistical-proof) -- Sat, 28 Mar 2026
-- [How We Structured an AI Agent Team: Lessons from a Constitutional Standard Rollout](https://reddi.tech/blog/blog-agent-constitution) -- Fri, 20 Mar 2026
-- [I Built a Viral App in an Afternoon. Here's the Team That Did It.](https://reddi.tech/blog/blog-barry-starr-openclaw) -- Tue, 17 Mar 2026
 <!-- BLOG_POSTS_END -->
 
 ---
