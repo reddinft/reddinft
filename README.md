@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [HyperFrames: a rendered video still has to be worth showing](https://reddi.tech/blog/hyperframes-from-brief-to-film) -- Sun, 25 Oct 2026
 - [Local-first validation: dropping a hosted check your deploy platform already runs](https://reddi.tech/blog/local-first-validation-hosted-ci) -- Wed, 14 Oct 2026
 - [Founder Journey Planner: How Australia Can Help Digital-Economy Founders Build Companies Here](https://reddi.tech/blog/founder-journey-planner-australian-digital-economy) -- Thu, 23 Jul 2026
 - [After PMF, Your Agent Stack Needs a Router](https://reddi.tech/blog/post-pmf-agent-stack-router) -- Mon, 22 Jun 2026
 - [AI Research Agents Need Restraint More Than Speed](https://reddi.tech/blog/ai-research-agents-need-restraint) -- Fri, 29 May 2026
-- [From Vibes to Contracts: Retrofitting SPDD onto Three AI-Built MVPs](https://reddi.tech/blog/from-vibes-to-contracts-spdd-openclaw) -- Thu, 30 Apr 2026
 <!-- BLOG_POSTS_END -->
 
 ---
