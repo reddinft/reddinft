@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [Keyword search missed a fact my OpenClaw agents already knew](https://reddi.tech/blog/keyword-vector-hybrid-retrieval-openclaw) -- Fri, 30 Oct 2026
 - [A 1.7B model beat my larger models at following instructions](https://reddi.tech/blog/small-model-task-fit-qwen3-1-7b) -- Wed, 28 Oct 2026
 - [HyperFrames: a rendered video still has to be worth showing](https://reddi.tech/blog/hyperframes-from-brief-to-film) -- Sun, 25 Oct 2026
+- [I audited my AI marketing team against the 22 Immutable Laws](https://reddi.tech/blog/ai-marketing-team-22-immutable-laws) -- Thu, 22 Oct 2026
 - [Local-first validation: dropping a hosted check your deploy platform already runs](https://reddi.tech/blog/local-first-validation-hosted-ci) -- Wed, 14 Oct 2026
-- [Founder Journey Planner: How Australia Can Help Digital-Economy Founders Build Companies Here](https://reddi.tech/blog/founder-journey-planner-australian-digital-economy) -- Thu, 23 Jul 2026
-- [After PMF, Your Agent Stack Needs a Router](https://reddi.tech/blog/post-pmf-agent-stack-router) -- Mon, 22 Jun 2026
 <!-- BLOG_POSTS_END -->
 
 ---
