@@ -69,7 +69,7 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 - [A 1.7B model beat my larger models at following instructions](https://reddi.tech/blog/small-model-task-fit-qwen3-1-7b) -- Wed, 28 Oct 2026
 - [HyperFrames: a rendered video still has to be worth showing](https://reddi.tech/blog/hyperframes-from-brief-to-film) -- Sun, 25 Oct 2026
 - [I audited my AI marketing team against the 22 Immutable Laws](https://reddi.tech/blog/ai-marketing-team-22-immutable-laws) -- Thu, 22 Oct 2026
-- [Local-first validation: dropping a hosted check your deploy platform already runs](https://reddi.tech/blog/local-first-validation-hosted-ci) -- Wed, 14 Oct 2026
+- [Claim boundaries you can run: gating public copy in CI](https://reddi.tech/blog/claim-boundaries-you-can-run) -- Wed, 14 Oct 2026
 <!-- BLOG_POSTS_END -->
 
 ---
