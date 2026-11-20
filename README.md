@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [Decisions APIs for agent routing, Parts 2 and 3: three APIs, then calibration](https://reddi.tech/blog/decisions-api-model-routing-part-2-3) -- Fri, 20 Nov 2026
+- [Decisions APIs for agent routing, Part 4: the same model scored 20 and 24](https://reddi.tech/blog/decisions-api-model-routing-part-4) -- Fri, 20 Nov 2026
+- [The Solana Deeds #1: The wallet dashboard was the easy part](https://reddi.tech/blog/solana-b1-wallet-dashboard) -- Fri, 20 Nov 2026
 - [Can a decisions API pick the right model for an agent task? Part 1](https://reddi.tech/blog/decisions-api-model-routing-part-1) -- Wed, 18 Nov 2026
 - [We funded the wrong wallet first. Then an AI agent paid a developer 0.1 SOL.](https://reddi.tech/blog/steve-capital-milestone-pay) -- Wed, 18 Nov 2026
-- [Fieldnotes: a small Rust web app, and the deployment lesson around it](https://reddi.tech/blog/topcoat-fieldnotes-rust-web-experiment) -- Tue, 10 Nov 2026
-- [I wanted my coding subscriptions to work as one fleet. The config was the easy part.](https://reddi.tech/blog/reddidotagents-coding-subscriptions-fleet) -- Mon, 02 Nov 2026
-- [Keyword search missed a fact my OpenClaw agents already knew](https://reddi.tech/blog/keyword-vector-hybrid-retrieval-openclaw) -- Fri, 30 Oct 2026
 <!-- BLOG_POSTS_END -->
 
 ---
