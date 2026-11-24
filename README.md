@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [The Solana Deeds #6: An API that charges a tenth of a cent per call](https://reddi.tech/blog/solana-m1-x402-paid-api) -- Tue, 24 Nov 2026
 - [The Solana Deeds #5, part two: The checkout gets a text](https://reddi.tech/blog/solana-b5-stablecoin-checkout-part-two) -- Mon, 23 Nov 2026
 - [The Solana Deeds #5: A stablecoin checkout that reads the chain](https://reddi.tech/blog/solana-b5-stablecoin-checkout) -- Sun, 22 Nov 2026
 - [The Solana Deeds #3: A locker nobody holds the key to](https://reddi.tech/blog/solana-b3-escrow) -- Sat, 21 Nov 2026
 - [The Solana Deeds #4: A runner for the best exchange rate](https://reddi.tech/blog/solana-b4-jupiter-swap) -- Sat, 21 Nov 2026
-- [Decisions APIs for agent routing, Parts 2 and 3: three APIs, then calibration](https://reddi.tech/blog/decisions-api-model-routing-part-2-3) -- Fri, 20 Nov 2026
 <!-- BLOG_POSTS_END -->
 
 ---
