@@ -65,11 +65,11 @@ If you want to use anything here, fork it. If you want to contribute, open a PR.
 
 <!-- BLOG_POSTS_START -->
 <!-- Auto-updated daily via GitHub Actions - source: reddi.tech/feed.xml -->
+- [The Solana Deeds #8: A bet that nobody gets to settle in their own favour](https://reddi.tech/blog/solana-m3-pyth-vault) -- Thu, 26 Nov 2026
 - [The Solana Deeds #7: Put your dollars with the better of two lenders](https://reddi.tech/blog/solana-m2-yield-router) -- Wed, 25 Nov 2026
 - [The Solana Deeds #6: An API that charges a tenth of a cent per call](https://reddi.tech/blog/solana-m1-x402-paid-api) -- Tue, 24 Nov 2026
 - [The Solana Deeds #5, part two: The checkout gets a text](https://reddi.tech/blog/solana-b5-stablecoin-checkout-part-two) -- Mon, 23 Nov 2026
 - [The Solana Deeds #5: A stablecoin checkout that reads the chain](https://reddi.tech/blog/solana-b5-stablecoin-checkout) -- Sun, 22 Nov 2026
-- [The Solana Deeds #3: A locker nobody holds the key to](https://reddi.tech/blog/solana-b3-escrow) -- Sat, 21 Nov 2026
 <!-- BLOG_POSTS_END -->
 
 ---
